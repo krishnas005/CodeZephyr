@@ -1,6 +1,9 @@
 import Navbar from "@/components/Navbars";
 import Logobar from "@/components/Logobar";
 import Topbar from "@/components/Topbar";
+import Services from "@/components/Services";
+import Firms from "@/components/Firms";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -8,15 +11,9 @@ export default function Home() {
       <Topbar />
       <Logobar />
       <Navbar />
-      <div className="flex  bg-gray-200 items-center mt-16">
-        <div className="text-xl font-bold mb-4 ml-8 border bg-blue-400"><span className="">Services</span></div>
-        <div className="flex flex-wrap gap-10 justify-center mx-auto">
-          <ServiceCircle title="Service 1" />
-          <ServiceCircle title="Service 2" />
-          <ServiceCircle title="Service 3" />
-          <ServiceCircle title="Service 4" />
-        </div>
-      </div>
+      <Services />
+      <Firms />
+      <Footer />
     </main>
   );
 }

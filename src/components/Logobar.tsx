@@ -9,37 +9,48 @@ const Logobar = () => {
   return (
     <>
       <div className="p-4 flex">
-        <div>
+        <div className='p-1 pl-4'>
           <Image
             src={logoImage}
             alt="Logo"
-            width={130}
-            height={90}
+            width={150}
+            height={110}
+            // layout='responsive'
           />
         </div>
-        <div className="flex ml-auto">
-        <div>
-          <Image
-            src={Indialogo}
-            alt="Logo"
-            width={120}
-            height={100}
-          />
-        </div>
+        <div className="flex ml-auto items-center">
+          {/* <div className="relative w-36 mr-6">
+            <input
+              type="text"
+              placeholder="Search"
+              className="border-2 border-gray-300 bg-white h-10 px-3 rounded-2xl text-sm focus:outline-none w-full"
+            />
+            <button className="absolute right-2 top-2">
+            </button>
+          </div> */}
+          
+          <div>
+            <Image
+              src={Indialogo}
+              alt="Logo"
+              width={120}
+              height={100}
+            />
+          </div>
           <Image
             src={G20logo}
             alt="logo"
-            width={80}
-            height={30}
+            width={60}
+            height={20}
           />
-        </div>
-        <div className="mx-4 mt-4">
+          <div className="mx-6 ">
             <Image
-            src={swachhbharat}
-            alt="logo"
-            width={80}
-            height={50}
+              src={swachhbharat}
+              alt="logo"
+              width={80}
+              height={50}
             />
+          </div>
         </div>
       </div>
     </>

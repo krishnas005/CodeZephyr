@@ -60,9 +60,9 @@ const Navbar = () => {
             <Link href="/about" className="text-white">
               About
             </Link>
-            <Link href="/contact" className="text-white">
+            {/* <Link href="/contact" className="text-white">
               Contact
-            </Link>
+            </Link> */}
             <div className="group relative">
               <a
                 href="#"
@@ -92,10 +92,10 @@ const Navbar = () => {
                 </Link>
               </div>
             </div>
-            <Link href="/ipc" className="text-white">
+            <Link href="https://www.indiacode.nic.in/" className="text-white">
               India Code
             </Link>
-            <div className="group relative">
+            {/* <div className="group relative">
               <a
                 href="#"
                 className={`text-white group-hover:text-gray-300 ${
@@ -120,7 +120,7 @@ const Navbar = () => {
                   Documents Generator
                 </Link>
               </div>
-            </div>
+            </div> */}
             <Link href="/learning" className="text-white">
               Learning
             </Link>
@@ -162,12 +162,10 @@ const Navbar = () => {
                 </Link>
               </div>
             </div>
-            <a href="#" className="text-white py-2 px-4">
+            <a href="https://www.indiacode.nic.in/" className="text-white py-2 px-4">
               India Code
             </a>
-            <a href="#" className="text-white py-2 px-4">
-              Contact
-            </a>
+            
           </div>
         </div>
       </nav>
