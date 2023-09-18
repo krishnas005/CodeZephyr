@@ -9,7 +9,7 @@ export default function Home() {
       <Logobar />
       <Navbar />
       <div className="flex  bg-gray-200 items-center mt-16">
-        <div className="text-xl font-bold mb-4 ml-8">Services</div>
+        <div className="text-xl font-bold mb-4 ml-8 border bg-blue-400"><span className="">Services</span></div>
         <div className="flex flex-wrap gap-10 justify-center mx-auto">
           <ServiceCircle title="Service 1" />
           <ServiceCircle title="Service 2" />
