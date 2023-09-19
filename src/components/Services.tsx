@@ -10,23 +10,28 @@ const ServicesSection = () => {
     {
       title: 'Know your Rights',
       description: 'Access concise information on your legal rights to make informed decisions and stand up for justice.',
+      link: '#',
     },
     {
         title: 'Explore Courts',
         description: ' Easily locate and gather essential details about courts across India for improved access to justice.',
+        link: '#',
       },
     {
         title: 'Documents Generator',
         description: 'Generate legally valid documents effortlessly with our LegalDoc Generator. Its the hassle-free way to create accurate legal documents in no time.',
+        link: '#',
       },
     {
       title: 'Docs Analyzer',
       description: 'Effortlessly analyze your legal documents.We provide keywords and a summary, providing you a quick overview of your legal content.',
+      link: '#',
     },
     
     {
       title: 'Multimodal Learning',
       description: 'Access a range of engaging learning materials, including videos, quizzes, and more, for a dynamic and effective learning journey.',
+      link: '/services/learning',
     },
   ];
 
