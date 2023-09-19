@@ -4,16 +4,17 @@ import logoImage from '@/assets/mainlogo.png';
 import G20logo from '@/assets/G20logo.webp';
 import Indialogo from '@/assets/75logo.webp';
 import swachhbharat from '@/assets/swachhbharat.webp';
+import digital from '@/assets/digital1.webp';
 
 const Logobar = () => {
   return (
     <>
       <div className="p-4 flex">
-        <div className='p-1 pl-4'>
+        <div className='p-1 pl-2'>
           <Image
             src={logoImage}
             alt="Logo"
-            width={150}
+            width={180}
             height={110}
             // layout='responsive'
           />
@@ -29,6 +30,15 @@ const Logobar = () => {
             </button>
           </div> */}
           
+          <div>
+            <Image
+              src={digital}
+              alt="Logo"
+              width={110}
+              height={100}
+            />
+          </div>
+
           <div>
             <Image
               src={Indialogo}
