@@ -21,7 +21,7 @@ const Navbar = () => {
       <Head>
         <title>Home Page</title>
       </Head>
-      <nav className="bg-gray-800 p-4 py-6">
+      <nav className="bg-gray-800 p-4 py-5">
         <div className="container mx-auto flex justify-between items-center">
           <div className="md:hidden">
             <button
@@ -54,10 +54,16 @@ const Navbar = () => {
             </button>
           </div>
           <div className="hidden md:flex flex-grow gap-6 justify-center space-x-4">
-            <Link href="/home-page" className="text-white">
+            <Link
+              href="/home-page"
+              className="text-white transition duration-300 hover:text-gray-400"
+            >
               Home
             </Link>
-            <Link href="/about" className="text-white">
+            <Link
+              href="/about"
+              className="text-white transition duration-300 hover:text-gray-400"
+            >
               About
             </Link>
             {/* <Link href="/contact" className="text-white">
@@ -66,8 +72,8 @@ const Navbar = () => {
             <div className="group relative">
               <a
                 href="#"
-                className={`text-white group-hover:text-gray-300 ${
-                  activeDropdown === 1 ? 'text-gray-300' : ''
+                className={`text-white group-hover:text-gray-400 transition duration-300 ${
+                  activeDropdown === 1 ? 'text-gray-400' : ''
                 }`}
                 onClick={() => toggleDropdown(1)}
               >
@@ -78,21 +84,24 @@ const Navbar = () => {
                   activeDropdown === 1 ? 'block' : 'hidden'
                 }`}
               >
-                <Link href="/rights/legal" className="block px-4 py-2">
+                <Link
+                  href="/rights/legal"
+                  className="block px-4 py-2 transition duration-300 hover:bg-gray-700"
+                >
                   Legal Rights
                 </Link>
-                <Link href="/rights/natural" className="block px-4 py-2">
+                <Link href="/rights/natural" className="block px-4 py-2 transition duration-300 hover:bg-gray-700">
                   Natural Rights
                 </Link>
-                <Link href="/rights/moral" className="block px-4 py-2">
+                <Link href="/rights/moral" className="block px-4 py-2 transition duration-300 hover:bg-gray-700">
                   Moral Rights
                 </Link>
-                <Link href="/rights/fundamental" className="block px-4 py-2">
+                <Link href="/rights/fundamental" className="block px-4 py-2 transition duration-300 hover:bg-gray-700">
                   Fundamental Rights
                 </Link>
               </div>
             </div>
-            <Link href="https://www.indiacode.nic.in/" className="text-white">
+            <Link href="https://www.indiacode.nic.in/" className="text-white transition duration-300 hover:text-gray-400">
               India Code
             </Link>
             {/* <div className="group relative">
@@ -121,22 +130,23 @@ const Navbar = () => {
                 </Link>
               </div>
             </div> */}
-            <Link href="/learning" className="text-white">
+            <Link href="/learning" className="text-white transition duration-300 hover:text-gray-400">
               Learning
             </Link>
           </div>
         </div>
-        <div
-          className={`md:hidden ${isSideNavbarOpen ? 'block' : 'hidden'}`}
-        >
+        <div className={`md:hidden ${isSideNavbarOpen ? 'block' : 'hidden'}`}>
           <div className="flex flex-col mt-4">
-            <Link href="/home-page" className="text-white py-2 px-4">
+            <Link
+              href="/home-page"
+              className="text-white py-2 px-4 transition duration-300 hover:bg-gray-700"
+            >
               Home
             </Link>
             <div className="group relative">
               <a
                 href="#"
-                className={`text-white py-2 px-4 group-hover:text-gray-300 ${
+                className={`text-white py-2 px-4 group-hover:text-gray-300 transition duration-300 ${
                   activeDropdown === 3 ? 'text-gray-300' : ''
                 }`}
                 onClick={() => toggleDropdown(3)}
@@ -148,21 +158,24 @@ const Navbar = () => {
                   activeDropdown === 3 ? 'block' : 'hidden'
                 }`}
               >
-                <Link href="/rights/legal" className="block px-4 py-2">
+                <Link
+                  href="/rights/legal"
+                  className="block px-4 py-2 transition duration-300 hover:bg-gray-700"
+                >
                   Legal
                 </Link>
-                <Link href="/rights/natural" className="block px-4 py-2">
+                <Link href="/rights/natural" className="block px-4 py-2 transition duration-300 hover:bg-gray-700">
                   Natural
                 </Link>
-                <Link href="/rights/moral" className="block px-4 py-2">
+                <Link href="/rights/moral" className="block px-4 py-2 transition duration-300 hover:bg-gray-700">
                   Moral
                 </Link>
-                <Link href="/rights/fundamental" className="block px-4 py-2">
+                <Link href="/rights/fundamental" className="block px-4 py-2 transition duration-300 hover:bg-gray-700">
                   Fundamental
                 </Link>
               </div>
             </div>
-            <a href="https://www.indiacode.nic.in/" className="text-white py-2 px-4">
+            <a href="https://www.indiacode.nic.in/" className="text-white py-2 px-4 transition duration-300 hover:bg-gray-700">
               India Code
             </a>
             

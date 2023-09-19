@@ -22,9 +22,7 @@ const FeedbackForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Add your feedback submission logic here
     console.log('Feedback submitted:', { name, email, feedback });
-    // Reset the form after submission
     setName('');
     setEmail('');
     setFeedback('');
@@ -33,7 +31,7 @@ const FeedbackForm = () => {
   return (
     <main>
         <Navbar />
-        <div className="max-w-md mx-auto p-6 bg-white my-10 rounded-lg shadow-lg mt-12">
+        <div className="max-w-md mx-auto p-6 my-10 rounded-lg shadow-lg mt-12 bg-gray-200">
       <h1 className="text-2xl font-bold mb-4 text-center">Provide Feedback</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">

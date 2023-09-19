@@ -1,47 +1,44 @@
-import emblem from "@/assets/emblem.webp";
-import Image from "next/image";
+import React from 'react';
+import logoLeft from '@/assets/supreme-court.webp';
+import logoRight from '@/assets/supreme-court.webp';
+import constitution from '@/assets/Constitution.webp';
+import topLogo from '@/assets/mainlogo.png';
+import Image from 'next/image';
 import Link from 'next/link';
-import Constitution from '@/assets/Constitution.webp';
-import AdditionalImage1 from '@/assets/supreme-court.webp';
-import AdditionalImage2 from '@/assets/supreme-court.webp';
 
-export default function Home() {
+const CenterImagePage = () => {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center">
-      <div className="mb-6">
+    <div className="flex flex-col  items-center justify-center ">
+      <div className="flex items-center justify-center w-full mb-10">
         <Image
-          src={emblem}
-          alt="Logo"
-          width={60}
-          height={80}
-          className="object-contain"
+        src={topLogo}
+        alt="topLogo"
+        width={300}
+        height={120}
+        className="mt-8"
         />
       </div>
-      <div className="flex items-center my-14">
+      <div className="flex gap-20 justify-center ">
+        {/* <img src={logoLeft} alt="Left Logo" className="w-16 h-16 mr-8" /> */}
+        <div>
+          <div className='border rounded-full bg-green-500 w-24 h-24 mr-8 mt-44'></div>
+          <Link href={'/home-page'}>Main Website</Link>
+          </div>
         <Image
-          src={Constitution}
-          alt="Constitution Image"
-          width={400}
-          height={400}
-          className="object-cover"
+        src={constitution}
+        alt="constitution"
+        className=""
+        width={400}
+        height={1200}
         />
-        <Link  href={'/home-page'}  className="ml-6 flex flex-col">
-          <Image
-            src={AdditionalImage1}
-            alt="Image 1"
-            width={350}
-            height={600}
-            className="object-cover mb-12"
-          />
-          <Image
-            src={AdditionalImage2}
-            alt="Image 2"
-            width={350}
-            height={600}
-            className="object-cover"
-          />
-        </Link>
+        <div>
+        <div className='border rounded-full bg-green-500 w-24 h-24 ml-10 mt-44'></div>
+        <Link href={'/learning'} className='ml-14'>Learning</Link>
+        </div>
+        {/* <img src={logoRight} alt="Right Logo" className="w-16 h-16 ml-8" /> */}
       </div>
-    </main>
+    </div>
   );
-}
+};
+
+export default CenterImagePage;
