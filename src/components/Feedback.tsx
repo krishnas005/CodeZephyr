@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState } from 'react';
+import Logobar from '@/components/Logobar';
 
 const FeedbackForm = () => {
   const [name, setName] = useState('');
@@ -29,9 +30,10 @@ const FeedbackForm = () => {
 
   return (
     <main>
+        {/* <Logobar/> */}
         <div>
         <section className="text-gray-600 body-font relative">
-  <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+  <div className="container px-5 pb-24 pt-10 mx-auto flex sm:flex-nowrap flex-wrap">
     <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
       <iframe
         width="100%"
@@ -68,7 +70,7 @@ const FeedbackForm = () => {
         Feedback
       </h2>
       <p className="leading-relaxed mb-5 text-gray-600 text-sm">
-        Enter your Feedback!
+        Provide your valuable Feedback!
       </p>
       <div className="relative mb-4">
         <label htmlFor="name" className="leading-7 text-sm text-gray-600">

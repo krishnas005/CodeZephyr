@@ -25,7 +25,7 @@ const ServicesSection = () => {
     {
       title: 'Docs Analyzer',
       description: 'Effortlessly analyze your legal documents. We provide keywords and a summary, providing you a quick overview of your legal content.',
-      link: '#',
+      link: '/services/docs-analyzer',
     },
     
     {

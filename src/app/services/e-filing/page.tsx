@@ -3,15 +3,17 @@
 import React from 'react';
 import Navbar from '@/components/Navbars';
 import Footer from '@/components/Footer';
+import Logobar from '@/components/Logobar';
 
 const EFilingForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
+    
   };
 
   return (
     <main>
+      <Logobar/>
       <Navbar/>
       <div className="flex flex-col items-center justify-center min-h-screen mt-12 mb-14">
       <div className="bg-gray-200 py-10 max-w-2xl w-full mx-auto border rounded-xl">
@@ -32,7 +34,7 @@ const EFilingForm = () => {
                 className="w-full p-3 rounded border border-gray-400"
               />
             </div>
-            <div className="grid grid-cols-1 gap-6 mb-6">
+            <div className="grid grid-cols-1 gap-2 mb-6">
               <label htmlFor="contactNumber" className="block font-semibold text-gray-700">
                 Contact Number
               </label>
@@ -44,7 +46,7 @@ const EFilingForm = () => {
                 className="w-full p-3 rounded border border-gray-400"
               />
             </div>
-            <div className="grid grid-cols-1 gap-6 mb-6">
+            <div className="grid grid-cols-1 gap-2 mb-6">
               <label htmlFor="issue" className="block font-semibold text-gray-700">
                 Issue
               </label>
@@ -56,7 +58,7 @@ const EFilingForm = () => {
                 className="w-full p-3 rounded border border-gray-400"
               />
             </div>
-            <div className="grid grid-cols-1 gap-6 mb-6">
+            <div className="grid grid-cols-1 gap-2 mb-6">
               <label htmlFor="address" className="block font-semibold text-gray-700">
                 Address
               </label>
@@ -68,7 +70,7 @@ const EFilingForm = () => {
                 rows="4"
               ></textarea>
             </div>
-            <div className="grid grid-cols-1 gap-6 mb-6">
+            <div className="grid grid-cols-1 gap-2 mb-6">
               <label htmlFor="state" className="block font-semibold text-gray-700">
                 State
               </label>
@@ -80,7 +82,7 @@ const EFilingForm = () => {
                 className="w-full p-3 rounded border border-gray-400"
               />
             </div>
-            <div className="grid grid-cols-1 gap-6 mb-6">
+            <div className="grid grid-cols-1 gap-2 mb-6">
               <label htmlFor="country" className="block font-semibold text-gray-700">
                 Country
               </label>
