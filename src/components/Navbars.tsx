@@ -104,7 +104,7 @@ const Navbar = () => {
             <Link href="https://www.indiacode.nic.in/" className="text-white transition duration-300 hover:text-gray-400" target="_blank" rel="noopener noreferrer">
               India Code
             </Link>
-            {/* <div className="group relative">
+            <div className="group relative">
               <a
                 href="#"
                 className={`text-white group-hover:text-gray-300 ${
@@ -119,25 +119,37 @@ const Navbar = () => {
                   activeDropdown === 2 ? 'block' : 'hidden'
                 }`}
               >
-                <Link href="/services/e-billing" className="block px-4 py-2">
+                <Link href="/services/e-billing" className="block px-4 py-2 transition duration-300 hover:bg-gray-700">
                   E-Filing
                 </Link>
-                <Link href="/services/courts-near-me" className="block px-4 py-2">
+                <Link href="/services/courts-near-me" className="block px-4 py-2 transition duration-300 hover:bg-gray-700">
                   Courts near me
                 </Link>
-                <Link href="/services/documents-generator" className="block px-4 py-2">
+                <Link href="/services/documents-generator" className="block px-4 py-2 transition duration-300 hover:bg-gray-700">
                   Documents Generator
                 </Link>
+                <Link href="/learning" className="block px-4 py-2 transition duration-300 hover:bg-gray-700">
+                  Learning
+                </Link>
               </div>
-            </div> */}
-            <Link href="/learning" className="text-white transition duration-300 hover:text-gray-400">
-              Learning
+            </div>
+          </div>
+          
+          <div className="hidden md:flex items-center space-x-2 ">
+            <Link href="/login" legacyBehavior>
+              <a className="text-white transition duration-300 hover:text-gray-400">Login</a>
+            </Link>
+            <p className="text-white">/</p>
+            <Link href="/register" legacyBehavior>
+              <a className="text-white transition duration-300 hover:text-gray-400">Register</a>
             </Link>
           </div>
         </div>
+
         <div className={`md:hidden ${isSideNavbarOpen ? 'block' : 'hidden'}`}>
           <div className="flex flex-col mt-4">
-            <Link
+
+          <Link
               href="/home-page"
               className="text-white py-2 px-4 transition duration-300 hover:bg-gray-700"
             >
@@ -178,7 +190,13 @@ const Navbar = () => {
             <a href="https://www.indiacode.nic.in/" className="text-white py-2 px-4 transition duration-300 hover:bg-gray-700">
               India Code
             </a>
-            
+
+            {/* <Link href="/login" legacyBehavior>
+              <a className="text-white py-2 px-4 transition duration-300 hover:bg-gray-700 block">Login</a>
+            </Link>
+            <Link href="/register" legacyBehavior>
+              <a className="text-white py-2 px-4 transition duration-300 hover:bg-gray-700 block">Register</a> */}
+            {/* </Link> */}
           </div>
         </div>
       </nav>

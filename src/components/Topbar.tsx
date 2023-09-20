@@ -18,7 +18,7 @@ export default function Topbar() {
         <div className="p-1">
           <Image src={emblem} alt="logo" width={13} height={20} />
         </div>
-        <div className="flex mt-1 text-xs">
+        <div className="flex mt-1.5 text-xs">
           <Link href={'https://www.india.gov.in/'} passHref target="_blank" rel="noopener noreferrer" className="">
             Government of India
           </Link>
