@@ -31,7 +31,7 @@ const Footer = () => {
             <li><a href="/home-page">Home</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="/about">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
         <div className='lg:inline-block hidden'>

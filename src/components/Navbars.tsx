@@ -66,9 +66,7 @@ const Navbar = () => {
             >
               About
             </Link>
-            {/* <Link href="/contact" className="text-white">
-              Contact
-            </Link> */}
+            
             <div className="group relative">
               <a
                 href="#"
@@ -132,7 +130,11 @@ const Navbar = () => {
                   Learning
                 </Link>
               </div>
+
             </div>
+           <Link href="/contact" className="text-white transition duration-300 hover:text-gray-400">
+              Contact
+            </Link>
           </div>
           
           <div className="hidden md:flex items-center space-x-2 ">

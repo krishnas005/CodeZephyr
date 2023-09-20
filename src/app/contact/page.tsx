@@ -1,11 +1,12 @@
 import React from 'react';
 import Navbar from '@/components/Navbars';
+import Feedback from '@/components/Feedback';
 
 const page = () => {
   return (
     <div>
         <Navbar />
-      <h1>Contact Page</h1>
+        <Feedback/>
     </div>
   )
 }

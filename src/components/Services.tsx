@@ -10,7 +10,7 @@ const ServicesSection = () => {
     {
       title: 'Know your Rights',
       description: 'Access concise information on your legal rights to make informed decisions and stand up for justice.',
-      link: '#',
+      link: 'https://lawmin.gov.in/acts-rules',
     },
     {
         title: 'Explore Courts',
@@ -54,7 +54,7 @@ const ServicesSection = () => {
         </div> */}
         <div className="flex flex-wrap -mx-4 p-4 lg:p-10">
           {services.map((service, index) => (
-            <a key={index} href={service.link} className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 h-18 card transform transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:cursor-pointer">
+            <a key={index} href={service.link}  target="_blank" rel="noopener noreferrer" className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 h-18 card transform transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:cursor-pointer">
               <div className="bg-white rounded-lg p-6 shadow-lg h-22">
                 <h3 className="text-lg font-bold mb-2 text-center">{service.title}</h3>
                 <p className="text-gray-700 text-xs">{service.description}</p>
