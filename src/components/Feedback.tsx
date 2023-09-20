@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useState } from 'react';
-import Logobar from '@/components/Logobar';
 
 const FeedbackForm = () => {
   const [name, setName] = useState('');
@@ -30,7 +29,6 @@ const FeedbackForm = () => {
 
   return (
     <main>
-        {/* <Logobar/> */}
         <div>
         <section className="text-gray-600 body-font relative">
   <div className="container px-5 pb-24 pt-10 mx-auto flex sm:flex-nowrap flex-wrap">

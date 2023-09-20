@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import Navbar from '@/components/Navbars';
 import Link from 'next/link';
+import Logobar from '@/components/Logobar';
+import Footer from '@/components/Footer';
 
 const KYCVerificationForm = () => {
   const [formData, setFormData] = useState({
@@ -31,8 +33,9 @@ const KYCVerificationForm = () => {
 
   return (
     <main>
+      <Logobar/>
       <Navbar/>
-      <div className="max-w-lg mx-auto p-8 mt-10 bg-white shadow-xl rounded-md">
+      <div className="max-w-lg mx-auto p-8 mt-10 mb-12 bg-white shadow-xl rounded-md">
       <h2 className="text-2xl font-bold mb-8 text-center">KYC Verification</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
@@ -161,6 +164,7 @@ const KYCVerificationForm = () => {
         <div className="text-center mt-4"><p>Already have an account? <Link href="/login" className="text-blue-600 font-semibold">Login</Link></p></div>
       </form>
     </div>
+    <Footer />
     </main>
   );
 };

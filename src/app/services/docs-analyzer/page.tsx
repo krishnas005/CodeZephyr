@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Navbar from '@/components/Navbars';
 import Logobar from '@/components/Logobar';
+import Footer from '@/components/Footer';
 
 const DocsAnalyzerPage = () => {
   const [inputType, setInputType] = useState('text');
@@ -42,8 +43,8 @@ const DocsAnalyzerPage = () => {
     <main>
         <Logobar />
         <Navbar />
-        <div className="container mx-auto p-8 text-center max-w-3xl">
-      <h1 className="text-2xl font-bold mb-8 mt-4">Docs Analyzer</h1>
+        <div className="container mx-auto mb-6 p-8 text-center max-w-3xl">
+      <h1 className="text-3xl font-semibold font-bold mb-8 mt-4">Docs Analyzer</h1>
       <div className="mb-4 flex justify-center items-center">
         <label className="mr-4">
           <input
@@ -93,6 +94,7 @@ const DocsAnalyzerPage = () => {
         <div className="">{summary}</div>
       </div>
     </div>
+    <Footer/>
     </main>
   );
 };

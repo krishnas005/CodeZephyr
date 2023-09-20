@@ -1,11 +1,13 @@
 import Navbar from '@/components/Navbars';
 import React from 'react';
 import Link from 'next/link';
-import rights from '@/assets/rights.webp'
+import rights from '@/assets/rights.webp';
+import Logobar from '@/components/Logobar';
 
 const LegalRightsPage = () => {
   return (
     <main>
+      <Logobar />
       <Navbar />
       <div className="bg-cover bg-center bg-gray-200 ">
         <div className="flex justify-center  bg-opacity-75">

@@ -22,7 +22,7 @@ const Navbar = () => {
         <title>Home Page</title>
       </Head>
       <nav className="bg-gray-800 p-4 py-5">
-        <div className="container mx-auto flex justify-between items-center">
+        <div className="container mx-auto flex ml-6 justify-between items-center">
           <div className="md:hidden">
             <button
               className="text-white focus:outline-none"
@@ -132,12 +132,12 @@ const Navbar = () => {
               </div>
 
             </div>
-           <Link href="/contact" className="text-white transition duration-300 hover:text-gray-400">
+            <Link href="/contact" className="text-white transition duration-300 hover:text-gray-400">
               Contact
             </Link>
           </div>
           
-          <div className="hidden md:flex items-center space-x-2 ">
+          <div className="hidden md:flex items-center space-x-2 mr-4">
             <Link href="/login" legacyBehavior>
               <a className="text-white transition duration-300 hover:text-gray-400">Login</a>
             </Link>

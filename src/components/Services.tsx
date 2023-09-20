@@ -13,17 +13,17 @@ const ServicesSection = () => {
       link: 'https://lawmin.gov.in/acts-rules',
     },
     {
-        title: 'Explore Courts',
+        title: 'Search for Courts',
         description: ' Easily locate and gather essential details about courts across India for improved access to justice.',
-        link: '#',
+        link: 'https://districts.ecourts.gov.in/',
       },
     {
         title: 'Documents Generator',
         description: 'Generate legally valid documents effortlessly with our LegalDoc Generator. Its the hassle-free way to create accurate legal documents in no time.',
-        link: '#',
+        link: '/services/documents-generator',
       },
     {
-      title: 'Docs Analyzer',
+      title: 'Documents Analyzer',
       description: 'Effortlessly analyze your legal documents. We provide keywords and a summary, providing you a quick overview of your legal content.',
       link: '/services/docs-analyzer',
     },

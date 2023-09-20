@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import Navbar from '@/components/Navbars';
 import Link from 'next/link';
+import Logobar from '@/components/Logobar';
+import Footer from '@/components/Footer';
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
@@ -18,11 +20,11 @@ const LoginPage = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Add your login logic here
   };
 
   return (
     <main>
+      <Logobar/>
       <Navbar/>
       <div className="flex justify-center items-center min-h-screen">
       <div className="w-full max-w-md">
@@ -77,6 +79,7 @@ const LoginPage = () => {
         </form>
       </div>
     </div>
+    <Footer/>
     </main>
   );
 };
