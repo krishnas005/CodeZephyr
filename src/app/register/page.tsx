@@ -5,8 +5,11 @@ import Navbar from '@/components/Navbars';
 import Link from 'next/link';
 import Logobar from '@/components/Logobar';
 import Footer from '@/components/Footer';
+import {useRouter} from 'next/navigation';
+import toast from 'react-hot-toast';
 
 const KYCVerificationForm = () => {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     fullName: '',
     idType: '',
@@ -26,9 +29,16 @@ const KYCVerificationForm = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form data submitted:', formData);
+  const handleSubmit = async (e) => {
+    try {
+      router.push('/login');
+      const response = await axios.post('/api/users/signup',formData);
+      console.log(response.data);
+      
+  } catch (error:any) {
+      console.log(error);
+      toast.error(error.message);
+  }
   };
 
   return (

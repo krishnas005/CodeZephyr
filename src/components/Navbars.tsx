@@ -195,15 +195,15 @@ const Navbar = () => {
                 >
                   Legal
                 </Link>
-                <Link href="/rights/natural" className="block px-4 py-2 transition duration-300 hover:bg-gray-700">
+                <div className="block px-4 py-2 transition duration-300 hover:bg-gray-700">
                   Natural
-                </Link>
-                <Link href="/rights/moral" className="block px-4 py-2 transition duration-300 hover:bg-gray-700">
+                </div>
+                <div className="block px-4 py-2 transition duration-300 hover:bg-gray-700">
                   Moral
-                </Link>
-                <Link href="/rights/fundamental" className="block px-4 py-2 transition duration-300 hover:bg-gray-700">
+                </div>
+                <div className="block px-4 py-2 transition duration-300 hover:bg-gray-700">
                   Fundamental
-                </Link>
+                </div>
               </div>
             </div>
             <a href="https://www.indiacode.nic.in/" className="text-white py-2 px-4 transition duration-300 hover:bg-gray-700">
