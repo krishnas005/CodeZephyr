@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import Firms from "@/components/Firms";
 import Footer from "@/components/Footer";
 import Slider from '@/components/Slider';
+import ChatBot from "@/components/Chatbot";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <div className="">
       <Services />
       <Firms />
+      <ChatBot />
       <Footer />
       </div>
     </main>

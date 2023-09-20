@@ -13,13 +13,13 @@ const Firms = () => {
           We believe in not only providing information but also facilitating access to justice for our users. To achieve this goal, we have established valuable collaborations with esteemed legal firms and professionals.
         </p>
         <div className="flex mt-4 gap-6 justify-center">
-          <div className="border-black rounded-lg border-2 p-1 mx-2 hover:bg-white">
+          <div className="hover:underline p-1 mx-2 font-bold">
             <Link href={'https://www.legalserviceindia.com/lawyers/lawyers_home.htm'} passHref target="_blank" rel="noopener noreferrer">Get legal help</Link>
           </div>
-          <div className="transition duration-300  mx-2 border-black rounded-lg border-2 p-1">
+          <div className="transition duration-300  mx-2 font-bold hover:underline p-1">
             <Link href={'https://www.legalserviceindia.com/lawyers/lawyers_home.htm'} passHref target="_blank" rel="noopener noreferrer">Lawyers directory</Link>
           </div>
-          <div className=" transition duration-300  border-black rounded-lg border-2 p-1 mx-2">
+          <div className=" transition duration-300 font-bold hover:underline p-1 mx-2">
             <Link href={'#'}>Schedule a call</Link>
           </div>
         </div>

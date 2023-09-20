@@ -68,13 +68,14 @@ const ServicesSection = () => {
         <div className="flex flex-wrap -mx-4 p-4 lg:p-10">
           {services.map((service, index) => (
             <a key={index} href={service.link}  target="_blank" rel="noopener noreferrer" className="w-full md:w-1/2 lg:w-1/3 px-4 mb-2 h-18 card transform transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:cursor-pointer">
-              <div className="bg-white rounded-xl p-6 shadow-lg h-22">
-              <p className="text-gray-700 text-xs ml-11 pl-4">
+              <div className="bg-white rounded-xl p-6 shadow-lg h-22 text-center">
+              <p className="text-gray-700 text-center flex justify-center text-xs ">
               <Image
                 src={service.description}
                 alt="logo"
                 width={80}
                 height={60}
+                className="text-center"
                 />
                 </p>
                 <h3 className="text-lg font-bold mb-2 text-center">{service.title}</h3>
