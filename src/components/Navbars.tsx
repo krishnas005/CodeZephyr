@@ -101,7 +101,7 @@ const Navbar = () => {
                 </Link>
               </div>
             </div>
-            <Link href="https://www.indiacode.nic.in/" className="text-white transition duration-300 hover:text-gray-400">
+            <Link href="https://www.indiacode.nic.in/" className="text-white transition duration-300 hover:text-gray-400" target="_blank" rel="noopener noreferrer">
               India Code
             </Link>
             {/* <div className="group relative">

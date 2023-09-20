@@ -14,10 +14,10 @@ const Firms = () => {
         </p>
         <div className="flex mt-4 gap-6 justify-center">
           <div className="border-black rounded-lg border-2 p-1 mx-2 hover:bg-white">
-            <Link href={'#'}>Get legal help</Link>
+            <Link href={'https://www.legalserviceindia.com/lawyers/lawyers_home.htm'} passHref target="_blank" rel="noopener noreferrer">Get legal help</Link>
           </div>
           <div className="transition duration-300 hover:underline p-1 mx-2">
-            <Link href={'#'}>Attorney directory</Link>
+            <Link href={'https://www.legalserviceindia.com/lawyers/lawyers_home.htm'} passHref target="_blank" rel="noopener noreferrer">Attorney directory</Link>
           </div>
           <div className=" transition duration-300 hover:underline p-1 mx-2">
             <Link href={'#'}>Schedule a call</Link>

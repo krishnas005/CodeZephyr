@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Navbar from '@/components/Navbars';
+import Footer from '@/components/Footer';
 
 const EFilingForm = () => {
   const handleSubmit = (e) => {
@@ -12,14 +13,14 @@ const EFilingForm = () => {
   return (
     <main>
       <Navbar/>
-      <div className="flex flex-col items-center justify-center min-h-screen mt-12">
-      <div className="bg-gray-200 py-10 max-w-3xl w-full mx-auto border rounded-xl">
+      <div className="flex flex-col items-center justify-center min-h-screen mt-12 mb-14">
+      <div className="bg-gray-200 py-10 max-w-2xl w-full mx-auto border rounded-xl">
         <div className="container mx-auto p-5">
           <h1 className="text-3xl font-semibold mb-10 text-center">
             E-Filing : Register Your Plea
           </h1>
-          <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6">
-            <div className="grid grid-cols-1 gap-6 mb-6">
+          <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-2">
+            <div className="grid grid-cols-1 gap-2 mb-6">
               <label htmlFor="fullName" className="block font-semibold text-gray-700">
                 Full Name
               </label>
@@ -101,6 +102,7 @@ const EFilingForm = () => {
         </div>
       </div>
     </div>
+    <Footer/>
     </main>
   );
 };
