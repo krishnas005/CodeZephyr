@@ -4,6 +4,7 @@ import Topbar from "@/components/Topbar";
 import Services from "@/components/Services";
 import Firms from "@/components/Firms";
 import Footer from "@/components/Footer";
+import Slider from '@/components/Slider';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Topbar />
       <Logobar />
       <Navbar />
+      <Slider />
       <Services />
       <Firms />
       <Footer />

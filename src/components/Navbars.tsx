@@ -21,7 +21,7 @@ const Navbar = () => {
       <Head>
         <title>Home Page</title>
       </Head>
-      <nav className="bg-gray-800 p-4 py-5">
+      <nav className="bg-gray-800 p-4 shadow-xl">
         <div className="container mx-auto flex ml-6 justify-between items-center">
           <div className="md:hidden">
             <button
