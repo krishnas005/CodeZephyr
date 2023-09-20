@@ -49,8 +49,8 @@ const ServicesSection = () => {
   ];
 
   return (
-    <div className="flex mt-4 mb-10">
-      <div className="container mx-auto p-2 lg:py-0 max-w-4xl bg-blue-100 rounded-lg shadow-xl">
+    <div className="flex mt-2 mb-14">
+      <div className="container mx-auto p-2 lg:py-0 max-w-4xl mt-14 bg-blue-200 rounded-lg shadow-2xl">
         {/* <div className="text-center">
           <h1 className="text-2xl font-semibold mt-10">
             Legal Awareness: Our Commitment to Legal Empowerment

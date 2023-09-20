@@ -5,6 +5,7 @@ import G20logo from '@/assets/G20logo.webp';
 import Indialogo from '@/assets/75logo.webp';
 import swachhbharat from '@/assets/swachhbharat.webp';
 import digital from '@/assets/digital1.webp';
+import SearchBar from '@/components/SearchBar';
 
 const Logobar = () => {
   return (
@@ -20,7 +21,8 @@ const Logobar = () => {
           />
         </div>
         <div className="flex ml-auto items-center ">
-          <div className="hidden lg:flex md:flex">
+          <SearchBar/>
+          <div className=" hidden lg:flex md:flex">
             <Image
               src={digital}
               alt="Logo"

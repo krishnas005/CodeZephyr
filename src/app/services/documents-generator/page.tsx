@@ -5,6 +5,10 @@ import Navbar from '@/components/Navbars';
 import Logobar from '@/components/Logobar';
 import Footer from '@/components/Footer';
 import downloadLink from '@/assets/result.pdf';
+import bhim from '@/assets/bhim.webp';
+import razor from '@/assets/razorpay.webp';
+import debit from '@/assets/debitcard.webp';
+import Image from 'next/image';
 
 const DocumentsGeneratorPage = () => {
   const [selectedDocument, setSelectedDocument] = useState('');
@@ -42,9 +46,9 @@ const DocumentsGeneratorPage = () => {
           className="w-full border border-gray-300 rounded p-2"
         >
           <option value="">Select Document</option>
-          <option value="document1">Document 1</option>
-          <option value="document2">Document 2</option>
-          <option value="document3">Document 3</option>
+          <option value="document1">Affidevit</option>
+          <option value="document2">Stamp Paper</option>
+          <option value="document3">Legal Notice</option>
         </select>
       </div>
       {showPaymentOptions && (
@@ -95,47 +99,49 @@ const DocumentsGeneratorPage = () => {
             className="w-full border border-gray-300 rounded p-2 mb-2"
             placeholder="Enter your address"
           />
-          <div className="mb-4">
+          <div className="mb-4 text-center">
             <label className="block mb-2">Choose Payment Method:</label>
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center ml-24 pl-28 space-x-4">
               <button
-                onClick={() => setPaymentMethod('Razorpay')}
+                onClick={() => setPaymentMethod('Bhim')}
                 className="flex items-center space-x-2 p-2 border border-gray-300 rounded hover:border-indigo-500"
               >
-                <img
-                  src="/"
-                  alt="Razorpay"
+                <Image
+                  src={bhim}
+                  alt="Bhim"
                   className="w-8 h-8"
                 />
               </button>
               <button
-                onClick={() => setPaymentMethod('DebitCard')}
+                onClick={() => setPaymentMethod('razor')}
                 className="flex items-center space-x-2 p-2 border border-gray-300 rounded hover:border-indigo-500"
               >
-                <img
-                  src="/"
-                  alt="Debit Card"
+                <Image
+                  src={razor}
+                  alt="Razor pay"
                   className="w-8 h-8"
                 />
               </button>
               <button
-                onClick={() => setPaymentMethod('QRScanner')}
+                onClick={() => setPaymentMethod('debit')}
                 className="flex items-center space-x-2 p-2 border border-gray-300 rounded hover:border-indigo-500"
               >
-                <img
-                  src="/"
-                  alt="QR Scanner"
+                <Image
+                  src={debit}
+                  alt="Debit"
                   className="w-8 h-8"
                 />
               </button>
             </div>
           </div>
+          <div className="text-center">
           <button
             onClick={handlePayment}
             className="bg-blue-500 text-white px-6 py-3 rounded font-semibold hover:bg-blue-600"
           >
             Pay Now
           </button>
+          </div>
         </div>
       )}
       {paymentStatus && (

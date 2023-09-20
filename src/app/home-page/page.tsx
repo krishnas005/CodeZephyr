@@ -6,6 +6,7 @@ import Firms from "@/components/Firms";
 import Footer from "@/components/Footer";
 import Slider from '@/components/Slider';
 import ChatBot from "@/components/Chatbot";
+import LogoSection from '@/components/LogoSection';
 
 export default function Home() {
   return (
@@ -14,7 +15,8 @@ export default function Home() {
       <Logobar />
       <Navbar />
       <Slider />
-      <div className="">
+      <LogoSection />
+      <div className="bg-blue-100">
       <Services />
       <Firms />
       <ChatBot />

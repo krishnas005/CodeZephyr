@@ -30,13 +30,13 @@ const ImageSlider = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % totalImages);
-    }, 9000);
+    }, 7000);
 
     return () => clearInterval(intervalId);
   }, [totalImages]);
 
   return (
-    <div className="relative transition-opacity duration-100">
+    <div className="relative transition-opacity duration-100 z-0">
       <Image
         src={images[currentImageIndex]}
         alt={`Image ${currentImageIndex + 1}`}

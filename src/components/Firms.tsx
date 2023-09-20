@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 const Firms = () => {
   return (
-    <main>
-      <div className="container mx-auto p-6 max-w-4xl bg-blue-100 rounded-lg shadow-lg mb-12">
+    <main className="mb-8">
+      <div className="container mx-auto p-4 max-w-4xl bg-blue-200 rounded-lg shadow-2xl mb-16">
         <div className="p-10">
         <h1 className="text-2xl font-bold mb-4 text-center">
          Lawyers by your side, guiding you at every stage

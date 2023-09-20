@@ -1,12 +1,29 @@
 "use client"
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+
 
 const Navbar = () => {
   const [isSideNavbarOpen, setIsSideNavbarOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+
+  const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setActiveDropdown(null);
+      }
+    };
+
+    window.addEventListener('click', handleOutsideClick);
+
+    return () => {
+      window.removeEventListener('click', handleOutsideClick);
+    };
+  }, []);
 
   const toggleSideNavbar = () => {
     setIsSideNavbarOpen(!isSideNavbarOpen);
@@ -21,7 +38,7 @@ const Navbar = () => {
       <Head>
         <title>Home Page</title>
       </Head>
-      <nav className="bg-gray-800 p-2 shadow-xl">
+      <nav className="bg-gray-800 p-2.5 shadow-xl relative z-10">
         <div className="container flex ml-6  items-center">
           <div className="md:hidden">
             <button
@@ -67,7 +84,7 @@ const Navbar = () => {
               ABOUT
             </Link>
             
-            <div className="group relative">
+            {/* <div className="group relative z-5" ref={dropdownRef}>
               <a
                 href="#"
                 className={`text-white group-hover:text-gray-400 transition duration-300 ${
@@ -97,12 +114,12 @@ const Navbar = () => {
                 <Link href="/rights/fundamental" className="block px-4 py-2 transition duration-300 hover:bg-gray-700">
                   Fundamental Rights
                 </Link>
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
             <Link href="https://www.indiacode.nic.in/" className="text-white transition duration-300 hover:text-gray-400" target="_blank" rel="noopener noreferrer">
               INDIA CODE
             </Link>
-            <div className="group relative">
+            <div className="group relative z-4" ref={dropdownRef}>
               <a
                 href="#"
                 className={`text-white group-hover:text-gray-300 ${
@@ -120,14 +137,14 @@ const Navbar = () => {
                 <Link href="/services/e-billing" className="block px-4 py-2 transition duration-300 hover:bg-gray-700">
                   E-Filing
                 </Link>
-                <Link href="/services/courts-near-me" className="block px-4 py-2 transition duration-300 hover:bg-gray-700">
+                <Link href='https://districts.ecourts.gov.in/' className="block px-4 py-2 transition duration-300 hover:bg-gray-700">
                   Courts near me
                 </Link>
                 <Link href="/services/documents-generator" className="block px-4 py-2 transition duration-300 hover:bg-gray-700">
                   Documents Generator
                 </Link>
-                <Link href="/learning" className="block px-4 py-2 transition duration-300 hover:bg-gray-700">
-                  Learning
+                <Link href="/service/docs-analyzer" className="block px-4 py-2 transition duration-300 hover:bg-gray-700">
+                  Docs Analyzer
                 </Link>
               </div>
 

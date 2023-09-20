@@ -28,7 +28,7 @@ raw = raw.lower()# converts to lowercase
 
 
   #tokenisation
-sent_tokens = nltk.sent_tokenize(raw)# converts to list of sentences 
+sent_tokens = nltk.sent_tokenize(raw)# converts to list of sentences
 word_tokens = nltk.word_tokenize(raw)# converts to list of word
 
 

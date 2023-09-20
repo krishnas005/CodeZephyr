@@ -6,7 +6,7 @@ import HoverChatIcon from '@/assets/ChatRobot.jpg';
 import Image from 'next/image';
 
 const ChatBot = () => {
-  const [isChatOpen, setIsChatOpen] = useState(true);
+  const [isChatOpen, setIsChatOpen] = useState(false);
 
   const toggleChat = () => {
     setIsChatOpen(!isChatOpen);
@@ -15,39 +15,40 @@ const ChatBot = () => {
   return (
     <div className="fixed bottom-5 right-5 z-10">
       <div
-        className={`rounded-full p-2 cursor-pointer transition-opacity duration-300 hover:${toggleChat} ${isChatOpen ? 'opacity-0' : 'opacity-100'}`}
+        className={`rounded-full p-2 cursor-pointer transition-opacity duration-300 hover:opacity-50 ${isChatOpen ? 'opacity-0' : 'opacity-100'} animate-wiggle`}
         onClick={toggleChat}
       >
-        <div className="relative w-16 h-16">
+        <div className="relative w-20 h-20">
           <Image
             src={ChatIcon}
             alt="Chat Icon"
             className="w-full h-full"
           />
-          <div className={`w-full h-full absolute top-0 left-0 transition-opacity duration-300 ${isChatOpen ? 'opacity-100' : 'opacity-0'}`}>
+          {/* <div className={`w-full h-full absolute top-0 left-0 transition-opacity duration-300 ${isChatOpen ? 'opacity-100' : 'opacity-0'}`}>
             <Image
               src={HoverChatIcon}
               alt="Chat Icon"
               className="w-full h-full"
             />
-          </div>
+          </div> */}
         </div>
       </div>
       <div
         className={`${
           isChatOpen ? 'block' : 'hidden'
-        } bg-white p-4 rounded-lg shadow-lg`}
+        } bg-blue-500 p-4 rounded-lg shadow-lg`}
         style={{ maxWidth: '300px', maxHeight: '400px' }}
       >
         <div className="flex justify-end">
           <button
-            className="text-gray-600 hover:text-red-500"
+            className="text-gray-800 hover:text-red-500"
             onClick={toggleChat}
           >
-            Close
+            X
           </button>
         </div>
-        <div className="mt-4 text-gray-700">Hello! How can I assist you?</div>
+        <div className="m2-4 text-gray-900 ">Hi! How can Legal Saathi assist you?</div>
+        <input type="text" placeholder="Reply to Legal Saathi" className="border border-black rounded-md "></input>
       </div>
     </div>
   );
