@@ -14,7 +14,7 @@ const Logobar = () => {
           <Image
             src={logoImage}
             alt="Logo"
-            width={180}
+            width={200}
             height={110}
             // layout='responsive'
           />

@@ -50,7 +50,7 @@ const ServicesSection = () => {
 
   return (
     <div className="flex mt-4 mb-10">
-      <div className="container mx-auto p-2 lg:py-0 max-w-4xl bg-orange-100 rounded-lg shadow-xl">
+      <div className="container mx-auto p-2 lg:py-0 max-w-4xl bg-blue-100 rounded-lg shadow-xl">
         {/* <div className="text-center">
           <h1 className="text-2xl font-semibold mt-10">
             Legal Awareness: Our Commitment to Legal Empowerment

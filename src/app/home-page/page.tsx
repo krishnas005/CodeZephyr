@@ -8,14 +8,16 @@ import Slider from '@/components/Slider';
 
 export default function Home() {
   return (
-    <main>
+    <main >
       <Topbar />
       <Logobar />
       <Navbar />
       <Slider />
+      <div className="">
       <Services />
       <Firms />
       <Footer />
+      </div>
     </main>
   );
 }

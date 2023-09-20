@@ -11,7 +11,7 @@ const CenterImagePage = () => {
   return (
     <main>
       <div className="relative flex flex-col items-center justify-center">
-      <Image src={bg} alt="img" className="absolute top-0 left-0 w-full h-full bg-cover opacity-40" />
+      <Image src={bg} alt="img" className="absolute top-0 left-0 w-full h-full bg-cover opacity-40 z-2" />
       <div className="flex items-center justify-center w-full mb-5 relative z-10">
         <Image
           src={topLogo}

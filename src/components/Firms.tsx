@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Firms = () => {
   return (
     <main>
-      <div className="container mx-auto p-6 max-w-4xl bg-orange-100 rounded-lg shadow-lg mb-12">
+      <div className="container mx-auto p-6 max-w-4xl bg-blue-100 rounded-lg shadow-lg mb-12">
         <div className="p-10">
         <h1 className="text-2xl font-bold mb-4 text-center">
          Lawyers by your side, guiding you at every stage

@@ -21,8 +21,8 @@ const Navbar = () => {
       <Head>
         <title>Home Page</title>
       </Head>
-      <nav className="bg-gray-800 p-4 shadow-xl">
-        <div className="container mx-auto flex ml-6 justify-between items-center">
+      <nav className="bg-gray-800 p-2 shadow-xl">
+        <div className="container flex ml-6  items-center">
           <div className="md:hidden">
             <button
               className="text-white focus:outline-none"
@@ -53,18 +53,18 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
-          <div className="hidden md:flex flex-grow gap-6 justify-center space-x-4">
+          <div className="hidden md:flex flex-grow gap-8 ml-4 space-x-4">
             <Link
               href="/home-page"
               className="text-white transition duration-300 hover:text-gray-400"
             >
-              Home
+              HOME
             </Link>
             <Link
               href="/about"
               className="text-white transition duration-300 hover:text-gray-400"
             >
-              About
+              ABOUT
             </Link>
             
             <div className="group relative">
@@ -75,7 +75,7 @@ const Navbar = () => {
                 }`}
                 onClick={() => toggleDropdown(1)}
               >
-                Rights
+                RIGHTS
               </a>
               <div
                 className={`absolute mt-2 bg-gray-600 text-white ${
@@ -100,7 +100,7 @@ const Navbar = () => {
               </div>
             </div>
             <Link href="https://www.indiacode.nic.in/" className="text-white transition duration-300 hover:text-gray-400" target="_blank" rel="noopener noreferrer">
-              India Code
+              INDIA CODE
             </Link>
             <div className="group relative">
               <a
@@ -110,7 +110,7 @@ const Navbar = () => {
                 }`}
                 onClick={() => toggleDropdown(2)}
               >
-                Services
+                SERVICES
               </a>
               <div
                 className={`absolute mt-2 bg-gray-600 text-white ${
@@ -133,11 +133,11 @@ const Navbar = () => {
 
             </div>
             <Link href="/contact" className="text-white transition duration-300 hover:text-gray-400">
-              Contact
+              CONTACT
             </Link>
           </div>
           
-          <div className="hidden md:flex items-center space-x-2 mr-4">
+          <div className="hidden md:flex items-center space-x-2 mr-10">
             <Link href="/login" legacyBehavior>
               <a className="text-white transition duration-300 hover:text-gray-400">Login</a>
             </Link>
