@@ -7,6 +7,7 @@ import docsanalyzer from '@/assets/docs-analyzer.jpg';
 import learning from '@/assets/multimedia.jpg';
 import courts from '@/assets/courts.jpg';
 
+
 const ServicesSection = () => {
   const services = [
     {
@@ -48,7 +49,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <div className="flex  min-h-screen mt-4 mb-10">
+    <div className="flex mt-4 mb-10">
       <div className="container mx-auto p-2 lg:py-0 max-w-4xl bg-orange-100 rounded-lg shadow-xl">
         {/* <div className="text-center">
           <h1 className="text-2xl font-semibold mt-10">
@@ -68,7 +69,7 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <a key={index} href={service.link}  target="_blank" rel="noopener noreferrer" className="w-full md:w-1/2 lg:w-1/3 px-4 mb-2 h-18 card transform transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:cursor-pointer">
               <div className="bg-white rounded-xl p-6 shadow-lg h-22">
-              <p className="text-gray-700 text-xs ml-14 pl-4">
+              <p className="text-gray-700 text-xs ml-11 pl-4">
               <Image
                 src={service.description}
                 alt="logo"

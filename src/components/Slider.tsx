@@ -5,6 +5,9 @@ import Image from 'next/image';
 import img1 from '@/assets/img1.jpg';
 import img2 from '@/assets/img2.jpg';
 // import img from '@/assets/img3.jpg';
+import {BiChevronsLeft} from "react-icons/bi";
+import {BiChevronsRight} from "react-icons/bi";
+
 
 const ImageSlider = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -43,13 +46,13 @@ const ImageSlider = () => {
         // className="w-full h-auto"
       />
       <div className="absolute top-1/2 left-0 transform -translate-y-1/2">
-        <button onClick={prevImage} className="bg-blue-500 text-white px-4 py-2 rounded">
-          Previous
+        <button onClick={prevImage} className= "text-black px-4 py-2 ">
+          <BiChevronsLeft size={40} />
         </button>
       </div>
       <div className="absolute top-1/2 right-0 transform -translate-y-1/2">
-        <button onClick={nextImage} className="bg-blue-500 text-white px-4 py-2 rounded">
-          Next
+        <button onClick={nextImage} className=" text-black px-4 py-2 ">
+          <BiChevronsRight size={40} />
         </button>
       </div>
       <div className="absolute bottom-0 left-0 right-0 flex justify-center mt-2">

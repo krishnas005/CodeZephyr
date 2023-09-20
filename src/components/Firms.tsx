@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Firms = () => {
   return (
     <main>
-      <div className="container mx-auto p-6 max-w-4xl bg-gray-100 rounded-lg shadow-lg mb-12">
+      <div className="container mx-auto p-6 max-w-4xl bg-orange-100 rounded-lg shadow-lg mb-12">
         <div className="p-10">
         <h1 className="text-2xl font-bold mb-4 text-center">
          Lawyers by your side, guiding you at every stage
@@ -16,10 +16,10 @@ const Firms = () => {
           <div className="border-black rounded-lg border-2 p-1 mx-2 hover:bg-white">
             <Link href={'https://www.legalserviceindia.com/lawyers/lawyers_home.htm'} passHref target="_blank" rel="noopener noreferrer">Get legal help</Link>
           </div>
-          <div className="transition duration-300 hover:underline p-1 mx-2">
+          <div className="transition duration-300  mx-2 border-black rounded-lg border-2 p-1">
             <Link href={'https://www.legalserviceindia.com/lawyers/lawyers_home.htm'} passHref target="_blank" rel="noopener noreferrer">Lawyers directory</Link>
           </div>
-          <div className=" transition duration-300 hover:underline p-1 mx-2">
+          <div className=" transition duration-300  border-black rounded-lg border-2 p-1 mx-2">
             <Link href={'#'}>Schedule a call</Link>
           </div>
         </div>
