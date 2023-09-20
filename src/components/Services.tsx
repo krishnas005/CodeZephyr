@@ -43,7 +43,7 @@ const ServicesSection = () => {
             Legal Awareness: Our Commitment to Legal Empowerment
           </h1>
         </div>
-        <div className="mt-4 px-12">
+        {/* <div className="mt-4 px-12">
           <p className="text-gray-700 hidden sm:block text-md">
             Legal awareness is the bedrock of a fair and just society. It
             empowers individuals to assert their rights, seek justice, and
@@ -51,7 +51,7 @@ const ServicesSection = () => {
             should have access to the tools that can break down these barriers
             and pave the way to justice.
           </p>
-        </div>
+        </div> */}
         <div className="flex flex-wrap -mx-4 p-4 lg:p-10">
           {services.map((service, index) => (
             <a key={index} href={service.link} className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 h-18 card transform transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:cursor-pointer">

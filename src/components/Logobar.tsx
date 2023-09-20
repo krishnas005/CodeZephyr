@@ -19,18 +19,8 @@ const Logobar = () => {
             // layout='responsive'
           />
         </div>
-        <div className="flex ml-auto items-center">
-          {/* <div className="relative w-36 mr-6">
-            <input
-              type="text"
-              placeholder="Search"
-              className="border-2 border-gray-300 bg-white h-10 px-3 rounded-2xl text-sm focus:outline-none w-full"
-            />
-            <button className="absolute right-2 top-2">
-            </button>
-          </div> */}
-          
-          <div>
+        <div className="flex ml-auto items-center ">
+          <div className="hidden lg:flex md:flex">
             <Image
               src={digital}
               alt="Logo"
@@ -39,7 +29,7 @@ const Logobar = () => {
             />
           </div>
 
-          <div>
+          <div className="hidden lg:flex md:flex">
             <Image
               src={Indialogo}
               alt="Logo"
@@ -47,13 +37,15 @@ const Logobar = () => {
               height={100}
             />
           </div>
+          <div className="hidden lg:flex">
           <Image
             src={G20logo}
             alt="logo"
             width={60}
             height={20}
           />
-          <div className="mx-6 ">
+          </div>
+          <div className="hidden lg:flex mx-6">
             <Image
               src={swachhbharat}
               alt="logo"

@@ -20,8 +20,9 @@ export default function Topbar() {
         <h1 className=""> | </h1>
         <h1 className="">Ministry of Law & Justice</h1>
         </div>
-        <div className="flex ml-auto text-xs mt-1 p-1                       ">
-            <Link href={'#'}>SKIP TO MAIN CONTENT</Link>
+        <div className="flex ml-auto text-xs  gap-3 mt-1                 ">
+            <Link href={'#'} >Skip to main content</Link>
+            <Link href={'#'}>-A  <span className="bg-black text-white mx-3 p-1">A</span>  <span className="mr-2">+A</span></Link>
         </div>
         </div>
         </>

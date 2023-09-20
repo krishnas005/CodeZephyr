@@ -9,9 +9,9 @@ import topLogo from '@/assets/Logo.png';
 
 const CenterImagePage = () => {
   return (
-    <div className="relative flex flex-col items-center justify-center">
+    <main>
+      <div className="relative flex flex-col items-center justify-center">
       <Image src={bg} alt="img" className="absolute top-0 left-0 w-full h-full bg-cover opacity-40" />
-      
       <div className="flex items-center justify-center w-full mb-5 relative z-10">
         <Image
           src={topLogo}
@@ -21,7 +21,6 @@ const CenterImagePage = () => {
           className="mt-7"
         />
       </div>
-      
       <div className="flex gap-20 justify-center">
         <div>
           <div className="border rounded-full mr-8 mt-44 transition-transform duration-300 transform hover:scale-110">
@@ -32,7 +31,6 @@ const CenterImagePage = () => {
             </Link>
           </div>
         </div>
-        
         <Image
           src={constitution}
           alt="constitution"
@@ -52,6 +50,7 @@ const CenterImagePage = () => {
         </div>
       </div>
     </div>
+    </main>
   );
 };
 
