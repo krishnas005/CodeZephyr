@@ -6,7 +6,7 @@ import HoverChatIcon from '@/assets/ChatRobot.jpg';
 import Image from 'next/image';
 
 const ChatBot = () => {
-  const [isChatOpen, setIsChatOpen] = useState(false);
+  const [isChatOpen, setIsChatOpen] = useState(true);
 
   const toggleChat = () => {
     setIsChatOpen(!isChatOpen);
@@ -15,20 +15,22 @@ const ChatBot = () => {
   return (
     <div className="fixed bottom-5 right-5 z-10">
       <div
-        className={`rounded-full p-2 cursor-pointer ${isChatOpen ? 'opacity-0' : 'opacity-100'} transition-opacity`}
+        className={`rounded-full p-2 cursor-pointer transition-opacity duration-300 hover:${toggleChat} ${isChatOpen ? 'opacity-0' : 'opacity-100'}`}
         onClick={toggleChat}
       >
         <div className="relative w-16 h-16">
           <Image
             src={ChatIcon}
             alt="Chat Icon"
-            className={`w-full h-full ${isChatOpen ? 'opacity-0' : 'opacity-100'} transition-opacity ease-in-out duration-300`}
+            className="w-full h-full"
           />
-          <Image
-            src={HoverChatIcon}
-            alt="Chat Icon"
-            className={`w-full h-full absolute top-0 left-0 ${isChatOpen ? 'opacity-100' : 'opacity-0'} transition-opacity ease-in-out duration-300`}
-          />
+          <div className={`w-full h-full absolute top-0 left-0 transition-opacity duration-300 ${isChatOpen ? 'opacity-100' : 'opacity-0'}`}>
+            <Image
+              src={HoverChatIcon}
+              alt="Chat Icon"
+              className="w-full h-full"
+            />
+          </div>
         </div>
       </div>
       <div
