@@ -28,7 +28,7 @@ const Footer = () => {
         <div className="mb-2 lg:inline-block hidden">
           <h3 className="font-semibold underline">Quick Links</h3>
           <ul className="text-sm list-disc">
-            <li><a href="/home-page">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="/about">About Us</a></li>
             <li><a href="/contact">Contact Us</a></li>

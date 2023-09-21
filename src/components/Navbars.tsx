@@ -72,7 +72,7 @@ const Navbar = () => {
           </div>
           <div className="hidden md:flex flex-grow gap-8 ml-4 space-x-4">
             <Link
-              href="/home-page"
+              href="/"
               className="text-white transition duration-300 hover:text-gray-400"
             >
               HOME
@@ -169,7 +169,7 @@ const Navbar = () => {
           <div className="flex flex-col mt-4">
 
           <Link
-              href="/home-page"
+              href="/"
               className="text-white py-2 px-4 transition duration-300 hover:bg-gray-700"
             >
               Home
