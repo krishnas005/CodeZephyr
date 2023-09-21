@@ -1,17 +1,17 @@
-#CODE ZEPHYR!
+<h1>CODE ZEPHYR!</h1>
 
-##Legal Awareness Website
+<h2>Legal Awareness Website</h2>
 
-###Table of Contents
+<h3>Table of Contents</h3>
 1.Getting Started
 2.Usage
 3.Overview
 4.Features
 5.Technologies Used
 
-#Getting Started
+<h2>Getting Started</h2>
 
-##Installation
+<h3>Installation</h3>
 
 1.Clone the repository:
 git clone https://github.com/krishnas005/CodeZephyr.git
@@ -27,11 +27,11 @@ npm run dev
 
 Server will be running on http://localhost:3000/
 
-##Overview
+<h2>Overview</h2>
 
 The Legal Awareness Website is a user-friendly and responsive platform built using Next.js, designed to provide individuals with easy access to legal information and services. It aims to empower users with legal knowledge, assistance, and services, simplifying complex legal processes.
 
-##Features
+<h2>Features</h2>
 
 1.User-Friendly Voice-Enabled Virtual Assistant Chatbot
 2.USSD System for Offline Support
@@ -43,7 +43,7 @@ The Legal Awareness Website is a user-friendly and responsive platform built usi
 8.Indian Penal Code
 9.Government Collaboration
 
-##Technologies used 
+<h2>Technologies used </h2>
 
 1.Next.js
 2.React
