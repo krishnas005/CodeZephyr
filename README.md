@@ -1,35 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#CODE ZEPHYR!
 
-## Getting Started
+##Legal Awareness Website
 
-First, run the development server:
+###Table of Contents
+1.Getting Started
+2.Usage
+3.Overview
+4.Features
+5.Technologies Used
 
-```bash
+#Getting Started
+
+##Installation
+
+1.Clone the repository:
+git clone https://github.com/krishnas005/CodeZephyr.git
+
+2.Install the project dependencies:
+cd CodeZephyr
+npm install
+
+3.Configure environment variables.
+
+4.Start the development server:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Server will be running on http://localhost:3000/
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+##Overview
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The Legal Awareness Website is a user-friendly and responsive platform built using Next.js, designed to provide individuals with easy access to legal information and services. It aims to empower users with legal knowledge, assistance, and services, simplifying complex legal processes.
 
-## Learn More
+##Features
 
-To learn more about Next.js, take a look at the following resources:
+1.User-Friendly Voice-Enabled Virtual Assistant Chatbot
+2.USSD System for Offline Support
+3.Legal Document Generator and Analyzer
+4.Blockchain-Based KYC Verification
+5.Learning Platform
+6.E-filing
+7.Court Locator
+8.Indian Penal Code
+9.Government Collaboration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+##Technologies used 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# CodeZephyr
+1.Next.js
+2.React
+3.Node.js
+4.MongoDB 
+5.Blockchain technology 
+6.Python libraries like pytesserrect, open cv, bert summarizer, spacy etc.
+7.Tailwind css
