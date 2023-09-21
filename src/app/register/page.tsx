@@ -1,45 +1,16 @@
-"use client"
 
-import React, { useState } from 'react';
+
+import React from 'react';
 import Navbar from '@/components/Navbars';
 import Link from 'next/link';
 import Logobar from '@/components/Logobar';
 import Footer from '@/components/Footer';
-import {useRouter} from 'next/navigation';
+
 import toast from 'react-hot-toast';
 
 const KYCVerificationForm = () => {
-  const router = useRouter();
-  const [formData, setFormData] = useState({
-    fullName: '',
-    idType: '',
-    idNumber: '',
-    address: '',
-    city: '',
-    country: '',
-    dob: '',
-    contactNumber: '',
-  });
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = async (e) => {
-    try {
-      router.push('/login');
-      const response = await axios.post('/api/users/signup',formData);
-      console.log(response.data);
-      
-  } catch (error:any) {
-      console.log(error);
-      toast.error(error.message);
-  }
-  };
+  
+  
 
   return (
     <main>
@@ -47,7 +18,7 @@ const KYCVerificationForm = () => {
       <Navbar/>
       <div className="max-w-lg mx-auto p-8 mt-10 mb-12 bg-white shadow-xl rounded-md">
       <h2 className="text-2xl font-bold mb-8 text-center">KYC Verification</h2>
-      <form onSubmit={handleSubmit}>
+      <form>
         <div className="mb-4">
           <label htmlFor="fullName" className="block text-gray-700 mb-1" >
             Full Name
@@ -56,8 +27,7 @@ const KYCVerificationForm = () => {
             type="text"
             id="fullName"
             name="fullName"
-            value={formData.fullName}
-            onChange={handleInputChange}
+            
             className="w-full border border-gray-300 rounded p-2"
             placeholder="Enter your name"
           />
@@ -70,8 +40,7 @@ const KYCVerificationForm = () => {
               type="date"
               id="dob"
               name="dob"
-              value={formData.dob}
-              onChange={handleInputChange}
+              
               className="w-full border border-gray-300 rounded p-2"
               placeholder="Enter your date of birth"
             />
@@ -83,8 +52,7 @@ const KYCVerificationForm = () => {
           <select
             id="idType"
             name="idType"
-            value={formData.idType}
-            onChange={handleInputChange}
+            
             className="w-full border border-gray-300 rounded p-2"
           >
             <option value="">Select ID Type</option>
@@ -102,8 +70,7 @@ const KYCVerificationForm = () => {
             type="text"
             id="idNumber"
             name="idNumber"
-            value={formData.idNumber}
-            onChange={handleInputChange}
+            
             className="w-full border border-gray-300 rounded p-2"
             placeholder="Enter your Id number"
           />
@@ -116,8 +83,7 @@ const KYCVerificationForm = () => {
               type="tel"
               id="contactNumber"
               name="contactNumber"
-              value={formData.contactNumber}
-              onChange={handleInputChange}
+              
               className="w-full border border-gray-300 rounded p-2"
               placeholder="Enter your contact number"
             />
@@ -129,8 +95,7 @@ const KYCVerificationForm = () => {
             type="text"
             id="address"
             name="address"
-            value={formData.address}
-            onChange={handleInputChange}
+             
             className="w-full border border-gray-300 rounded p-2"
             placeholder="Enter your address"
           />
@@ -143,8 +108,7 @@ const KYCVerificationForm = () => {
             type="text"
             id="city"
             name="city"
-            value={formData.city}
-            onChange={handleInputChange}
+            
             placeholder="Enter your city"
             className="w-full border border-gray-300 rounded p-2"
           />
@@ -157,8 +121,7 @@ const KYCVerificationForm = () => {
             type="text"
             id="country"
             name="country"
-            value={formData.country}
-            onChange={handleInputChange}
+            
             className="w-full border border-gray-300 rounded p-2"
             placeholder="Enter your country"
           />
