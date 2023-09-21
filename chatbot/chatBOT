@@ -43,7 +43,7 @@ def LemNormalize(text):
     return LemTokens(nltk.word_tokenize(text.lower().translate(remove_punct_dict)))
 
   #matching
-greeting_inputs = ("hello", "hi", "greetings", "sup", "what's up","hey",)
+greeting_inputs = ("hello", "hi","hii", "greetings", "sup", "what's up","hey",)
 greeting_responses = ["hi", "hey", "*nods*", "hi there", "hello", "I am glad! You are talking to me"]
 def greeting(sentence):
  
@@ -72,21 +72,21 @@ def greeting(sentence):
 
   #
   flag=True
-print("NYAY SATHI: My name is Sathi. I will answer your queries about laws and ministry. If you want to exit, type Bye!")
+print("NyaySathi: My name is Sathi. I will answer your queries about laws and ministry. If you want to exit, type Bye!")
 while(flag==True):
     user_response = input()
     user_response=user_response.lower()
     if(user_response!='bye'):
         if(user_response=='thanks' or user_response=='thank you' ):
             flag=False
-            print("NYAY SATHI: You are welcome..")
+            print("NyaySathi: You are welcome..")
         else:
             if(greeting(user_response)!=None):
-                print("NYAY SATHI: "+greeting(user_response))
+                print("NyaySathi: "+greeting(user_response))
             else:
-                print("NYAY SATHI: ",end="")
+                print("NyaySathi: ",end="")
                 print(response(user_response))
                 sent_tokens.remove(user_response)
     else:
         flag=False
-        print("NYAY SATHI: Dhanyavad! take care..")
+        print("NyaySathi: Dhanyavad! take care..")
