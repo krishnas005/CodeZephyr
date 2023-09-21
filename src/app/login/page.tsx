@@ -7,20 +7,6 @@ import Logobar from '@/components/Logobar';
 import Footer from '@/components/Footer';
 
 const LoginPage = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
-  };
-
-  const handlePasswordChange = (event) => {
-    setPassword(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-  };
 
   return (
     <main>
@@ -28,7 +14,7 @@ const LoginPage = () => {
       <Navbar/>
       <div className="flex justify-center items-center min-h-screen">
       <div className="w-full max-w-md">
-        <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit}>
+        <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"></form>
           <div className="text-center font-semibold text-2xl my-8">Login</div>
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
@@ -39,8 +25,6 @@ const LoginPage = () => {
               id="email"
               type="email"
               placeholder="Enter your mobile number"
-              value={email}
-              onChange={handleEmailChange}
               required
             />
           </div>
@@ -53,8 +37,6 @@ const LoginPage = () => {
               id="password"
               type="password"
               placeholder="Enter your password"
-              value={password}
-              onChange={handlePasswordChange}
               required
             />
           </div>
@@ -74,7 +56,7 @@ const LoginPage = () => {
               Forgot Password?
             </a>
           <div className="text-center">
-          Don&apos;t have a account? <Link className="text-blue-600 font-semibold hover:text-blue-800" href={'/register'}>Register</Link>
+          Don&apos;t have an account? <Link className="text-blue-600 font-semibold hover:text-blue-800" href={'/register'}>Register</Link>
           </div>
         </form>
       </div>
