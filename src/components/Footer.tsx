@@ -37,10 +37,10 @@ const Footer = () => {
         <div className='lg:inline-block hidden'>
           <h3 className="font-semibold underline">Service Links</h3>
           <ul className="text-sm list-disc">
-            <li><a href="#">E-Filing</a></li>
-            <li><a href="#">Know Your Rights</a></li>
-            <li><a href="#">Courts nearby</a></li>
-            <li><a href="#">Query Resolve</a></li>
+            <li><a href="/services/e-filing">E-Filing</a></li>
+            <li><a href="/services/docs-analyzer">Docs Analyzer</a></li>
+            <li><a href='https://districts.ecourts.gov.in/'>Courts nearby</a></li>
+            <li><a href="/services/documents-generator">Docs Generator</a></li>
           </ul>
         </div>
       </div>
