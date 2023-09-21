@@ -1,12 +1,12 @@
 "use client"
 
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from '@/components/Navbars';
 import Link from 'next/link';
 import Logobar from '@/components/Logobar';
 import Footer from '@/components/Footer';
 
-const LoginPage = () => {
+export default function LoginPage{
 
   return (
     <main>
@@ -66,6 +66,6 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+
 
 
