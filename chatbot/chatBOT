@@ -90,3 +90,20 @@ while(flag==True):
     else:
         flag=False
         print("NyaySathi: Dhanyavad! take care..")
+
+# TESTING ACCURACY
+test_set = [
+    ("Hello", "hi how may i help you"),
+    ("What's your name?", "I am glad! You are talking to me sir"),   
+]
+correct_responses = 0
+total_responses = len(test_set)
+
+for user_input, expected_response in test_set:
+    user_input = user_input.lower()
+    bot_response = responses(user_input)
+    if bot_response == expected_response:
+        correct_responses += 1
+
+accuracy = (correct_responses / total_responses) * 100
+print(f"Accuracy: {accuracy}%")
