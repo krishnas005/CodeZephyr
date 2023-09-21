@@ -13,16 +13,19 @@
 
 <h3>Installation</h3>
 
-1.Clone the repository:
+1. Clone the repository:
 git clone https://github.com/krishnas005/CodeZephyr.git
 
-2.Install the project dependencies:
+2. Go to the project directory:
 cd CodeZephyr
+cd frontend
+
+2. Install the project dependencies:
 npm install
 
-3.Configure environment variables.
+3. Configure environment variables.
 
-4.Start the development server:
+4. Start the development server:
 npm run dev
 
 Server will be running on http://localhost:3000/
@@ -33,22 +36,22 @@ The Legal Awareness Website is a user-friendly and responsive platform built usi
 
 <h2>Features</h2>
 
-1.User-Friendly Voice-Enabled Virtual Assistant Chatbot
-2.USSD System for Offline Support
-3.Legal Document Generator and Analyzer
-4.Blockchain-Based KYC Verification
-5.Learning Platform
-6.E-filing
-7.Court Locator
-8.Indian Penal Code
-9.Government Collaboration
+1. User-Friendly Voice-Enabled Virtual Assistant Chatbot
+2. USSD System for Offline Support
+3. Legal Document Generator and Analyzer
+4. Blockchain-Based KYC Verification
+5. Learning Platform
+6. E-filing
+7. Court Locator
+8. Indian Penal Code
+9. Government Collaboration
 
 <h2>Technologies used </h2>
 
-1.Next.js
-2.React
-3.Node.js
-4.MongoDB 
-5.Blockchain technology 
-6.Python libraries like pytesserrect, open cv, bert summarizer, spacy etc.
-7.Tailwind css
+1. Next.js
+2. React
+3. Node.js
+4. MongoDB
+5. Blockchain technology
+6. Python libraries like pytesserrect, open cv, bert summarizer, spacy etc.
+7. Tailwind css
