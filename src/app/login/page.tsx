@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Logobar from '@/components/Logobar';
 import Footer from '@/components/Footer';
 
-export default function LoginPage{
+export default function LoginPage() {
 
   return (
     <main>
