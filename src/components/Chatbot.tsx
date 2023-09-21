@@ -47,8 +47,8 @@ const ChatBot = () => {
             X
           </button>
         </div>
-        <div className="m2-4 text-gray-900 ">Hi! How can Legal Saathi assist you?</div>
-        <input type="text" placeholder="Reply to Legal Saathi" className="border border-black rounded-md "></input>
+        <div className="m2-4 text-gray-900 ">Hi! How can NyaySathi assist you?</div>
+        <input type="text" placeholder="Reply to NyaySathi" className="border border-black rounded-md "></input>
       </div>
     </div>
   );
