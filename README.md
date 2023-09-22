@@ -13,11 +13,11 @@
 
 <h3>Installation</h3>
 
-1. Clone the repository:
+1. Clone the repository: /n
 git clone https://github.com/krishnas005/CodeZephyr.git
 
 2. Go to the project directory:
-cd CodeZephyr
+cd CodeZephyr /n
 cd frontend
 
 2. Install the project dependencies:
